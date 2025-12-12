@@ -16,5 +16,5 @@ public class FilterConfig {
         registrationBean.setFilter(new LoggingFilter());
         registrationBean.addUrlPatterns("/v1/api/leant-it-ws/*"); // Adjust the URL pattern as needed
         return registrationBean;
-    }    
+    }  
 }
