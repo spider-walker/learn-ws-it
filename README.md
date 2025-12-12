@@ -9,4 +9,3 @@ git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
 git reset --soft HEAD~1
 
 
-https://github.com/Victorious-SEO/victorious-app-ui/pull/507/files?diff=split&w=1
