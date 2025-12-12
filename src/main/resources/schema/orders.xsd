@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://example.com/order"
+    xmlns="http://example.com/order">
+
+    <xs:element name="getOrderRequestOP">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="orderId" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getOrderRequestIP">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="order">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="orderId" type="xs:string" />
+                            <xs:element name="item" type="xs:string" />
+                            <xs:element name="quantity" type="xs:int" />
+                            <xs:element name="price" type="xs:double" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
